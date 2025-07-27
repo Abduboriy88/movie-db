@@ -17,8 +17,8 @@ function MovieCard({movie}) {
         <div className="movie-poster">
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
             <div className="movie-overlay">
-                <button className={`favorite-btn ${favorite ? "active" : ""}`} onClick={onFavouriteClick}>
-                    ♥
+                <button className="favorite-btn " onClick={onFavouriteClick}>
+                  {favorite ? "❤️" : "🤍"}
                 </button>
             </div>
         </div>
