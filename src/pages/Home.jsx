@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
     const LoadPopularMovies = async () => {
       try{
-        const popularMovies = await getAnimationMovies()
+        const popularMovies = await getPopularMovies()
         setMovies(popularMovies)
       } catch (err) {
         setError("Failed to load movies...")
